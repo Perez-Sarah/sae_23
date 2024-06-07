@@ -1,0 +1,46 @@
+CREATE TABLE Administration (
+    id_administration INT(8) NOT NULL AUTO_INCREMENT,
+    mdp VARCHAR(30) NOT NULL,
+    PRIMARY KEY (id_administration)
+);
+
+CREATE TABLE Gestionnaire (
+    id_gestion INT(8) NOT NULL AUTO_INCREMENT,
+    mdp VARCHAR(30) NOT NULL,
+    PRIMARY KEY (id_gestion)
+);
+
+CREATE TABLE Batiment (
+    id_bat INT(8) NOT NULL AUTO_INCREMENT,
+    nom_bat VARCHAR(20) NOT NULL,
+    gestion INT(8) NOT NULL,
+    PRIMARY KEY (id_bat),
+    FOREIGN KEY (gestion) REFERENCES Gestionnaire(id_gestion)
+);
+
+CREATE TABLE Salle (
+    nom_salle VARCHAR(20) NOT NULL, 
+    type_salle VARCHAR(20) NOT NULL,
+    capacite INT NOT NULL,
+    batiment INT(8) NOT NULL,
+    PRIMARY KEY (nom_salle),
+    FOREIGN KEY (batiment) REFERENCES Batiment(id_bat)
+);
+
+CREATE TABLE Capteur (
+    nom_capteur VARCHAR(20) NOT NULL,
+    type_capteur VARCHAR(20) NOT NULL,
+    unite VARCHAR(5) NOT NULL,
+    salle VARCHAR(20) NOT NULL,
+    PRIMARY KEY (nom_capteur),
+    FOREIGN KEY (salle) REFERENCES Salle(nom_salle)
+);
+
+CREATE TABLE Mesure (
+    id_mesure INT(10) NOT NULL AUTO_INCREMENT,
+    date_mesure DATE NOT NULL,
+    valeur DECIMAL(6, 2) NOT NULL,
+    capteur VARCHAR(20) NOT NULL,
+    PRIMARY KEY (id_mesure),
+    FOREIGN KEY (capteur) REFERENCES Capteur(nom_capteur)
+);
