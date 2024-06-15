@@ -1,30 +1,8 @@
 <?php
 $page_title = "Accueil";
-include('db_connect.php');
+include('includes/db_connect.php');
+include('includes/header.php');
 ?>
-
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAE23 Accueil</title>
-  <link rel="stylesheet" href="styles/gestion.css">
-</head>
-<body>
-  <header>
-    <h1>Gestion</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="administration.html">Administration</a></li>
-        <li><a href="gestion.html">Gestion</a></li>
-        <li><a href="consultation.html">Consultation</a></li>
-        <li><a href="gestion_projet.html">Gestion de projet</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
 
 <h2>Objectif du site</h2>
 <p>Notre objectif est de gérer les bâtiments, salles et capteurs pour un suivi optimal des conditions environnementales.</p>
@@ -32,8 +10,6 @@ include('db_connect.php');
 <h3>Bâtiments gérés</h3>
 <ul>
   <?php
-  
-  
   $sql = "SELECT name FROM buildings";
   $result = $conn->query($sql);
 
@@ -62,7 +38,7 @@ include('db_connect.php');
   }
   ?>
 </ul>
-</main>
-</body>
-</html>
 
+<?php
+include('includes/footer.php');
+?>

@@ -1,0 +1,143 @@
+body
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  height: 50px;
+}
+
+/* barre en haut avec marquer eportfolio */
+header
+{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #564E4E;
+  color : white;
+  text-align: center;
+}
+
+section#first1
+{
+        text-align: center;
+}
+
+h3#first
+{
+        text-align: center;
+}
+
+.button {
+background-color: #564E4E;
+border: none;
+border-radius: 2rem;
+margin: 1px 5px
+}
+
+.button1 {
+background-color: #564E4E;
+border: none;
+border-radius: 2rem;
+margin: 1px 5px;
+float: left;
+width: 100px;
+}
+
+nav
+{
+  margin-top: 20px;
+}
+
+/*barre derrière les boutons des menus*/
+
+nav ul
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+nav ul li
+{
+  float: left;
+}
+
+nav ul li a
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+section
+{
+  padding-top: 180px;
+  padding-left: 20px;
+  padding-right: 15px;
+}
+h2
+{
+    color : black;
+        text-decoration: underline;
+        text-align: left;
+}
+
+h3
+{
+        text-align: left;
+}
+
+p {
+        text-align: left;
+}
+
+footer
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #CED4D1;
+  color: black;
+  text-align: center;
+}
+table{
+	width: 400px;
+	margin:20px;
+	border-collapse: collapse;
+}
+
+caption{
+	background-color:black;
+	color:white;
+	padding:20px;
+	font-weight:bold;
+}
+
+th{
+	background-color:grey;
+	color:white;
+	padding:10px;
+	border: 1px solid black;
+}
+
+td{
+	padding:10px;
+	background-color:white;
+	border: 1px solid black;
+}
+
+td:last-child{
+	width:100px;
+	font-style: italic;
+}
+
+.right{
+	text-align:right;
+}
+

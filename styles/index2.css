@@ -1,0 +1,293 @@
+/* CSS style1 adaptatif */
+
+
+/* le texte */
+
+body 
+{
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  height: 50px;
+}
+
+/* barre en haut avec marquer eportfolio */
+header
+{
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  height: 70px;
+  background-color: #564E4E;
+  color : white;
+  text-align: center;
+}
+
+section#first1
+{
+	text-align: center;
+}
+
+h3#first
+{
+	text-align: center;
+}
+
+/*hr.dot 
+{
+	 border: dotted 2px;
+	 width: 80%;												
+}
+*/
+
+.button {
+background-color: #564E4E;
+border: none;
+border-radius: 2rem;
+margin: 1px 5px
+}
+
+.button1 {
+background-color: #564E4E;
+border: none;
+border-radius: 2rem;
+margin: 1px 5px;
+float: left;
+width: 100px;
+}
+/*
+.button2 {
+background-color: #564E4E;
+border: none;
+border-radius: 2rem;
+margin: 1px 5px;
+float: right;
+width: 25px;
+}
+*/
+
+
+nav
+{
+  margin-top: 20px;
+}  
+
+/*barre derrière les boutons des menus*/
+
+nav ul 
+{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+  background-color: #f1f1f1;
+}
+
+nav ul li 
+{
+  float: left;
+}
+
+nav ul li a 
+{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+/*
+nav ul li a:hover:not(.first)
+{
+  background-color: #DDDDDD;
+  color: black;
+} 
+/*
+
+/* sert à espacer les différentes parties */
+section 
+{
+  padding-top: 180px;	
+  padding-left: 20px;
+  padding-right: 15px;
+}
+/*
+aside#last 
+{
+  padding-top: 20px;	
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-bottom: 700px;
+  
+}
+
+aside a
+{
+  text-decoration: none;
+}*/
+
+
+
+/*Met le titre ePortfolio au centre */
+/*h1
+{ 
+  text-align: center;
+}
+*/
+h2
+{ 
+    color : black;
+	text-decoration: underline;
+	text-align: left;
+}
+
+h3
+{
+	text-align: left;
+}
+
+p {
+	text-align: left;
+}
+ 
+footer 
+{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color: #CED4D1;
+  color: black;
+  text-align: center;
+} 
+/*
+footer ul li
+{
+  float: left;
+  width:33%;
+  list-style-type: none;
+}
+
+footer ul li:first-child
+{
+  text-align: left;
+}
+
+footer ul li:last-child
+{
+  float:right;
+  text-align: right;
+}
+
+/* max-width pour faibles résolutions 
+@media screen and (max-width: 780px) 
+{
+	h1
+	{
+		font-size: 1.8em;
+	}
+	
+	nav ul li 
+	{
+		float: none;
+		width: 100%;
+		border-right: none;
+	}
+	
+	nav ul li a 
+	{
+		padding: 1px;
+	}
+	
+	section#first 
+	{
+		padding-top: 50px;
+	}
+	
+	section 
+	{
+		padding-top: 5px;
+		padding-right: 15px;
+	}
+	.image-responsive 
+	{
+		max-width: 100%;
+		height: auto;
+    }
+}
+
+/* max-width pour fortes résolutions 
+@media screen and (min-width: 1280px) 
+{
+
+
+	nav
+	{
+	   position:fixed;
+	   top:0px; 
+	   width: 225px;
+	   float: left;
+	   height: 100%;
+	   background-color: #888888;
+	}
+	
+	nav ul li a 
+	{
+	  display: block;
+	  width: 225px;
+	  float: left;
+	  color: white;
+	  text-align: left;
+	}
+	
+	section 
+	{
+	  float: right;	
+	  width: 80%;
+	  padding-bottom: 10px;
+	  padding-right:1%;
+	}
+
+	section#first 
+	{
+	  padding-top:135px;
+	}
+
+	aside#last 
+	{
+	  float: right;	
+	  width: 80%;
+	  padding-top: 25px;
+	  padding-bottom: 90px;
+	  padding-right:1%;
+	}
+	
+	footer 
+	{
+	  clear: both;
+	}
+}
+
+ul{
+	text-align:left;
+}
+
+table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 3px solid #000000 ;
+      padding: 8px;
+      text-align: left;
+	  
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+*/
+

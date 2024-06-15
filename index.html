@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--title display-->  
+<title>Accueil - Gestion des Bâtiments</title>
+  <link rel="stylesheet" href="./styles/index2.css"><!--insert style for html page-->
+</head>
+<body>
+  <header>
+    <h1>Gestion des Bâtiments</h1><!--title on html page-->
+    <nav>
+      <ul><!--setting up buttons in order to move through different pages-->
+        <li><a class="button" href="index.html" class="first">Accueil</a></li>
+        <li><a class="button" href="login_admin.php">Administration</a></li>
+        <li><a class="button" href="login_gestion.php">Gestion</a></li>
+        <li><a class="button" href="consul.php">Consultation</a></li>
+        <li><a class="button" href="gestion_projet.html">Gestion de projet</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section><!--separate the different parts-->
+    <h2>Objectif du site</h2><!--first part-->
+    <p>Par groupe de 3, nous devions gérer les bâtiments, salles et capteurs de l'iut de Blagnac pour faire un suivi optimal des conditions environnementales.</p>
+    <p>Pour exploiter les données provenant de capteurs répartis dans les bâtiments de l'IUT, nous avons utilisé :</p>
+    <li>Une base de données SQL : nous l'avons crée sous phpmyadmin. Elle se nomme sae23</li>
+    <li>Node-RED : outils de développement basé sur les flux pour la programmation visuelle</li>
+    <li>InluxDB : base de données orientée serie temporelle chronologique</li>
+    <li>Grafana : visualisation et mise en forme de données métriques</li>
+    <p> Le site web permet de pouvoir visualiser les métriques et les données relevées. Il y a différentes pages qui ne sont pas accessible par tout le monde. L'administrateur et le gestionnaire ont des pages différentes avec des noms d'utilsateurs et des mots de passe différents.</p><br/>
+    <h3>Les bâtiments que nous avons gérés</h3><!--second part-->
+  </section>
+    <ul>
+      <li>Bâtiment A</li>
+      <li>Bâtiment B</li>
+      <li>Bâtiment C</li>
+    </ul>
+    <h3>Salles équipées</h3><!--third part-->
+    <ul>
+      <li>Salle 101</li>
+      <li>Salle 102</li>
+      <li>Salle 103</li>
+    </ul>
+  </section>
+  <footer><!--footnote-->
+    <li><a href="https://www.iut-blagnac.fr/fr/" target="_blank">IUT de Blagnac </a></li>
+    <li>Département Réseaux et Télécommunications</li>
+  </footer>
+</body>
+</html>
